@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* =====================================================
+   PALETA — tomada del escudo de la U.E. Monte Cristo
+   rojo del escudo, negro de la banda, blanco, plata
+   de los listones y acentos tricolor (Bolivia)
+===================================================== */
+:root {
+  --rojo: #d2161e;
+  --rojo-osc: #8e0d13;
+  --rojo-rgb: 210, 22, 30;
+  --rojo-suave: rgba(var(--rojo-rgb), 0.08);
+  --negro: #121212;
+  --grafito: #2b2b2b;
+  --plata: #9a9a9a;
+  --plata-claro: #d6d6d6;
+  --blanco: #ffffff;
+  --papel: #faf7f4;
+  --papel-2: #f2ede8;
+  --amarillo: #f4d40b;
+  --verde: #12893b;
+
+  --texto: #1c1c1c;
+  --texto-suave: rgba(28, 28, 28, 0.66);
+
+  --f-script: 'Great Vibes', cursive;
+  --f-serif: 'Cormorant Garamond', Georgia, serif;
+  --f-sans: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --sombra: 0 10px 30px rgba(18, 18, 18, 0.12);
+
+  font-family: var(--f-serif);
+  color: var(--texto);
+  background: var(--papel);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--papel);
+  overflow-x: hidden;
+}
+
+body.bloqueado { overflow: hidden; }
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+button, input, textarea { font: inherit; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html { scroll-behavior: auto; }
+}

@@ -1,0 +1,8 @@
+# Configuración mínima para la CLI de Supabase (`supabase link`, `supabase db push`, `supabase functions deploy`)
+project_id = "invitacion_graduacion"
+
+[functions.gestionar-usuarios]
+verify_jwt = true
+
+[functions.firmar-subida]
+verify_jwt = true
